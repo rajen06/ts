@@ -1,0 +1,14 @@
+@baseUrl = http://localhost:3000
+
+GET {{baseUrl}}/messages
+
+###
+POST {{baseUrl}}/messages
+Content-Type: application/json
+
+{
+  "content": "123"
+}
+
+###
+GET {{baseUrl}}/messages/abc
